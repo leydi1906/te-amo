@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>♥ para ti mi niño ♥</title>
+  <style>
+    .body {
+      background-color: rgb(159, 217, 243);
+      text-align: center;
+    }
+
+    .body__title {
+      color: white;
+    }
+
+    .body__img {
+      width: 40%;
+      max-width: 512px;
+      border-radius: 5%;
+    }
+  </style>
+</head>
+
+<body class="body">
+  <h1 class="body__title">♥ ♥ me amas? ♥</h1>
+  <img src="te amo.jpg" alt="teamo" class="body__img" />
+  <br>
+  <button id="yes">chi</button>
+  <button id="no">no</button>
+
+  <script>
+    const vuttonSi = document.getElementById('yes');
+    const vuttonNo = document.getElementById('no');
+
+    const zomosNobios = () => {
+        alert('sabia que ibas a decir que chi ❤');
+      alert('no me importa estar lejos de ti, porque en mi corazón estas muy cerca te amo❤');
+      location.href = 'https://youtu.be/Ho-Eh-91qk8?si=-CgvbnqFaX9QjF34'
+    };
+
+    const ebitarKCRompaMyBobo = () => {
+      vuttonNo.style.position = 'absolute';
+      vuttonNo.style.top = (Math.random() * window.innerHeight + 'px');
+      vuttonNo.style.left = (Math.random() * window.innerWidth + 'px');
+    };
+
+    vuttonSi.addEventListener('click', zomosNobios);
+    vuttonNo.addEventListener('mouseover', ebitarKCRompaMyBobo);
+  </script>
+</body>
+
+</html>
